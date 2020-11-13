@@ -1,0 +1,97 @@
+/* Variables */
+:root {
+    --font: "Inter", Arial, Helvetica, sans-serif;
+    --black: #000;
+    --grey: rgb(100, 100, 100);
+    --white: #FFF;
+    --blue: #001AFF;
+    --yellow: #FFC700;
+}
+
+/* 
+----------------
+    Wrapper
+----------------
+*/
+
+.white {
+    background-color: var(--white);
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)  {
+    .wrapper {
+        margin: 0 auto;
+        padding: 1rem;    
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)  {
+    .wrapper {
+        margin: 0 auto;
+        padding: 1.5rem;    
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .wrapper {
+        margin: 0 auto;
+        padding: 2rem;    
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .wrapper {
+        margin: 0 auto;
+        padding: 2rem;    
+    }
+}
+
+/* 
+--------------------------
+    Layout & Global
+--------------------------
+*/
+
+.link {
+    color: var(--black);
+}
+
+.link:hover {
+    color: var(--grey);
+}
+
+.link:focus {
+    color: var(--yellow);
+}
+
+.underlineYellow > h2 {
+    display: inline-block;
+    position: relative;
+    border-bottom: 1rem solid var(--yellow);
+}
+
+.contactLinks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contactLinks > a {
+    padding: 0 10px;
+}
+
+.contactLinks > a:first-child {
+    padding: 0 10px 0 0;
+}
+
+.contactLinks > a:last-child {
+    padding: 0 0 0 10px;
+}

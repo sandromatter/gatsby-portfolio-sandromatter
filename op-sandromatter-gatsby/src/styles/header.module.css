@@ -1,0 +1,54 @@
+@import './layout.module.css';
+
+.header {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 4px solid blue;
+
+    /* Shadow Nav */
+    -webkit-box-shadow: 2px 9px 17px 0px rgba(110,110,110,0.25);
+    -moz-box-shadow: 2px 9px 17px 0px rgba(17, 17, 17, 0.25);
+    box-shadow: 2px 9px 17px 0px rgba(110,110,110,0.25);
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .header {
+        height: 65px;
+        justify-content: left;
+    }
+}
+
+.link {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.link:focus {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+.logo {
+    font: var(--font);
+    font-size: 1.75rem;
+    margin: 0;
+    padding: 0 50px;
+}
+
+.full-text {
+    display: none;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .short-text {
+        display: none;
+    }
+    .full-text {
+        display: inline-block;
+    }
+}

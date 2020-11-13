@@ -1,0 +1,25 @@
+/* 
+ * Purpose:
+ * Assign height: "100%" to
+ * html, body, #___gatsby &  
+ * div with role="group"
+*/
+
+html, body, #___gatsby, #gatsby-focus-wrapper {
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+div[role="group"][tabindex] {
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 150%;
+}
