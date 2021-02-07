@@ -27,7 +27,7 @@ const Banner = ({ h1Text }) => {
                 </div>
                 <div className={stylesBanner.rowImage}>
                     <div className={stylesBanner.mainImage}>
-                        <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+                        <Img fadeIn="false" loading="eager" fluid={data.placeholderImage.childImageSharp.fluid} />
                     </div>
                 </div>
                 <div className={stylesBanner.scroll}>

@@ -23,7 +23,7 @@ const EnPage = () => (
           <li>Photography &amp; videography <span role="img" aria-label="Emoji camera">📸 </span><span role="img" aria-label="Emoji videocamera">🎥 </span></li>
           <li>Tech, news &amp; media <span role="img" aria-label="Emoji floppy-disk">💾 </span><span role="img" aria-label="Emoji newspaper">📰 </span></li>
         </ul>
-        <p>In case I launch a new project, such as this website, I'll be sure to tell you about it on <a className={styles.link} href="https://www.twitter.com/sandromatter">Twitter</a> or <a className={styles.link} href="https://www.linkedin.com/in/sandromatter">LinkedIn</a>. If I launch another photo or video project, you're most likely to hear about it on <a className={styles.link} href="https://www.instagram.com/sandromatter">Instagram</a>. Take a look, write me, or leave a <span role="img" aria-label="Emoji thumbs up">👍🏻</span>.</p>
+        <p>In case I launch a new project, such as this website, I'll be sure to tell you about it on <a className={styles.link} href="https://www.twitter.com/sandromatter">Twitter</a> or <a className={styles.link} href="https://www.linkedin.com/in/sandromatter">LinkedIn</a>. If I launch another photo or video project, you're most likely to hear about it on <a className={styles.link} href="https://www.instagram.com/sandromatter">Instagram</a> and you can find my coding projects (like this website) on <a className={styles.link} href="https://www.github.com/sandromatter">GitHub</a>. Take a look, write me, or leave a <span role="img" aria-label="Emoji thumbs up">👍🏻</span>.</p>
         <div className={styles.underlineYellow}>
           <h2>contact</h2>
         </div>
