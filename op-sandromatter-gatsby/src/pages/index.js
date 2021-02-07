@@ -16,7 +16,7 @@ const IndexPage = () => (
         <div className={styles.underlineYellow}> 
           <h2>hey!</h2>
         </div>
-        <p>Ich bin Online Marketing Spezialist und studiere an der Fachhochschule Graubünden Digital Business Management.</p>
+        <p>Ich bin Online Marketing Spezialist aus der Schweiz <span role="img" aria-label="Emoji switzerland flag">🇨🇭</span> und studiere an der Fachhochschule Graubünden Digital Business Management.</p>
         <p>Was ich mag in Kürze:</p>
         <ul>
           <li>Berge &amp; Mountainbikes! <span role="img" aria-label="Emoji tree">🌲</span><span role="img" aria-label="Emoji mountain">⛰️</span><span role="img" aria-label="Emoji cyclist">🚴</span></li>

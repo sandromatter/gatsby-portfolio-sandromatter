@@ -16,7 +16,7 @@ const EnPage = () => (
         <div className={styles.underlineYellow}> 
           <h2>hey!</h2>
         </div>
-        <p>I am an online marketing specialist and study «Digital Business Management» at the University of Applied Sciences of the Grisons.</p>
+        <p>I am an online marketing specialist from Switzerland <span role="img" aria-label="Emoji switzerland flag">🇨🇭</span> and study «Digital Business Management» at the University of Applied Sciences of the Grisons.</p>
         <p>What I like in a nutshell:</p>
         <ul>
           <li>Mountains &amp; mountainbikes! <span role="img" aria-label="Emoji tree">🌲</span><span role="img" aria-label="Emoji mountain">⛰️</span><span role="img" aria-label="Emoji cyclist">🚴</span></li>
