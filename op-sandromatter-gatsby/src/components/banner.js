@@ -2,9 +2,10 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
  
-import styles from "../styles/banner.module.css"
+import stylesBanner from "../styles/banner.module.css"
+import stylesLayout from "../styles/layout.module.css"
 
-const Banner = () => {
+const Banner = ({ h1Text }) => {
     const data = useStaticQuery(graphql`
         query {
         placeholderImage: file(relativePath: { eq: "sandromatter-portrait.png" }) {
@@ -17,20 +18,23 @@ const Banner = () => {
         }
     `)
     return (
-        <section className={styles.banner}>
-            <div className={styles.containerHero}>
-                <div className={styles.rowText}>
-                    <div className={`${styles.mainText} ${styles.underlineBlue}`}>
-                        <h1>Das bin ich,<br />Sandro Matter</h1>
+        <section className={stylesBanner.banner}>
+            <div className={stylesBanner.containerHero}>
+                <div className={stylesBanner.rowText}>
+                    <div className={`${stylesBanner.mainText} ${stylesBanner.underlineBlue}`}>
+                        <h1>{h1Text},<br />Sandro Matter</h1>
                     </div>
                 </div>
-                <div className={styles.rowImage}>
-                    <div className={styles.mainImage}>
+                <div className={stylesBanner.rowImage}>
+                    <div className={stylesBanner.mainImage}>
                         <Img fluid={data.placeholderImage.childImageSharp.fluid} />
                     </div>
                 </div>
-                <div className={styles.scroll}>
-                    <span>scroll down</span>                    
+                <div className={stylesBanner.scroll}>
+                    <div className={stylesBanner.languageBox}>
+                        <a className={stylesLayout.link} href="/">de</a> | <a className={stylesLayout.link} href="/en">en</a>
+                    </div>
+                    <span>scroll down</span>            
                 </div>
             </div>
         </section>

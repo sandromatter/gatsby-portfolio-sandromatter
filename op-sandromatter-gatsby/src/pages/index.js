@@ -9,10 +9,10 @@ import styles from "../styles/layout.module.css"
 const IndexPage = () => (
   <>
     <Header />
-    <Banner />
+    <Banner h1Text={"Das bin ich"}/>
     <main className={styles.white}>
       <article className={styles.wrapper}>
-        <SEO title="Das bin ich." />
+        <SEO title="Das bin ich." lang="de"/>
         <div className={styles.underlineYellow}> 
           <h2>hey!</h2>
         </div>

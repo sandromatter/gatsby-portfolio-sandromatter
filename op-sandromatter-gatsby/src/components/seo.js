@@ -7,6 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import defaultOpenGraphImage from "../images/og-sandromatter-profile.jpg"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -27,6 +28,7 @@ function SEO({ description, lang, meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+  const ogImageUrl = site.siteMetadata.siteUrl + ( defaultOpenGraphImage )
 
   return (
     <Helmet
@@ -68,13 +70,25 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          property: `og:image`,
+          content: ogImageUrl,
+        },
+        {
+          property: `twitter:image`,
+          content: ogImageUrl,
+        },
+        {
+          property: `image`,
+          content: ogImageUrl,
+        },
       ].concat(meta)}
     />
   )
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `de`,
   meta: [],
   description: ``,
 }
