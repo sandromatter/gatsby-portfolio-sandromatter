@@ -11,7 +11,7 @@ const Banner = ({ h1Text }) => {
         placeholderImage: file(relativePath: { eq: "sandromatter-portrait.png" }) {
             childImageSharp {
             fluid(maxWidth: 480) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp_noBase64
             }
             }
         }
@@ -27,7 +27,7 @@ const Banner = ({ h1Text }) => {
                 </div>
                 <div className={stylesBanner.rowImage}>
                     <div className={stylesBanner.mainImage}>
-                        <Img fadeIn="false" loading="eager" fluid={data.placeholderImage.childImageSharp.fluid} />
+                        <Img fadeIn={false} loading="eager" fluid={data.placeholderImage.childImageSharp.fluid} />
                     </div>
                 </div>
                 <div className={stylesBanner.scroll}>
