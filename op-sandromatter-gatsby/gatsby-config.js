@@ -3,6 +3,7 @@ module.exports = {
     title: `sandromatter.ch`,
     description: `Online Marketing Spezialist und Student an der Fachhochschule Graubünden.`,
     author: `@sandromatter`,
+    siteUrl: `https://www.sandromatter.ch`,
   },
   plugins: [
     {

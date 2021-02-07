@@ -7,9 +7,9 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import defaultOpenGraphImage from "../images/og-sandromatter-profile.jpg"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import defaultOpenGraphImage from "../images/og-sandromatter-profile.jpg"
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -20,6 +20,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            siteUrl
           }
         }
       }
@@ -28,7 +29,7 @@ function SEO({ description, lang, meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-  const ogImageUrl = defaultOpenGraphImage
+  const ogImageUrl = site.siteURL + defaultOpenGraphImage
 
   return (
     <Helmet
