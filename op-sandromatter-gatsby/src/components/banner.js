@@ -10,7 +10,7 @@ const Banner = ({ h1Text }) => {
         query {
         placeholderImage: file(relativePath: { eq: "sandromatter-portrait.png" }) {
             childImageSharp {
-            fluid(maxWidth: 480) {
+            fluid(maxWidth: 960) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
             }
             }
